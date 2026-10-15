@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join the Guild | Kautuhala Coding Guild</title>
+
+    <meta name="description" content="Submit an application to join the Kautuhala Coding Guild and explore computing through projects and experiments.">
+    <meta name="author" content="Kautuhala Coding Guild">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='43' fill='%231d3557'/%3E%3Cpath d='M25 68 L50 20 L75 68 L50 55 Z' fill='%23f1c40f'/%3E%3C/svg%3E">
+</head>
+
+<body>
+    <header>
+        <p><strong>🏹 कौतूहल — Kautūhala</strong></p>
+        <p>Your expedition begins with curiosity.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="guild.html">The Guild</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="quests.html">Quests</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <main>
+        <h1>Join the Expedition</h1>
+
+        <p>
+            Interested in learning, experimenting, and building projects?
+            Use the application form below to practise filling out a
+            guild membership application.
+        </p>
+
+        <p>
+            <strong>Important:</strong>
+            This is a static HTML demonstration. It does not save or
+            deliver applications to the guild. Use fictional test
+            information while practising.
+        </p>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <p>
+                    <label for="full-name">Full Name:</label><br>
+                    <input
+                        type="text"
+                        id="full-name"
+                        name="full_name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label><br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@email.com"
+                        autocomplete="email"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="age">Age:</label><br>
+                    <input
+                        type="number"
+                        id="age"
+                        name="age"
+                        min="13"
+                        max="100"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="birth-date">Date of Birth:</label><br>
+                    <input
+                        type="date"
+                        id="birth-date"
+                        name="birth_date"
+                    >
+                </p>
+
+                <p>Gender (optional):</p>
+
+                <input
+                    type="radio"
+                    id="gender-female"
+                    name="gender"
+                    value="female"
+                >
+                <label for="gender-female">Female</label><br>
+
+                <input
+                    type="radio"
+                    id="gender-male"
+                    name="gender"
+                    value="male"
+                >
+                <label for="gender-male">Male</label><br>
+
+                <input
+                    type="radio"
+                    id="gender-other"
+                    name="gender"
+                    value="other"
+                >
+                <label for="gender-other">Other</label><br>
+
+                <input
+                    type="radio"
+                    id="gender-prefer-not"
+                    name="gender"
+                    value="prefer-not-to-say"
+                >
+                <label for="gender-prefer-not">Prefer not to say</label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Learning Interests</legend>
+
+                <p>Select the areas you would like to explore:</p>
+
+                <input
+                    type="checkbox"
+                    id="interest-html"
+                    name="interests"
+                    value="html"
+                >
+                <label for="interest-html">HTML and Web Development</label><br>
+
+                <input
+                    type="checkbox"
+                    id="interest-programming"
+                    name="interests"
+                    value="programming"
+                >
+                <label for="interest-programming">Programming</label><br>
+
+                <input
+                    type="checkbox"
+                    id="interest-ai"
+                    name="interests"
+                    value="artificial-intelligence"
+                >
+                <label for="interest-ai">Artificial Intelligence</label><br>
+
+                <input
+                    type="checkbox"
+                    id="interest-backend"
+                    name="interests"
+                    value="backend"
+                >
+                <label for="interest-backend">Backend and Systems</label><br>
+
+                <input
+                    type="checkbox"
+                    id="interest-games"
+                    name="interests"
+                    value="games-apps"
+                >
+                <label for="interest-games">Games and Applications</label><br>
+
+                <input
+                    type="checkbox"
+                    id="interest-git"
+                    name="interests"
+                    value="git"
+                >
+                <label for="interest-git">Git and Collaboration</label><br>
+
+                <p>
+                    <label for="experience">Previous Experience:</label><br>
+
+                    <select id="experience" name="experience" required>
+                        <option value="">Select your level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="basic">Basic Knowledge</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="motivation">Why do you want to join?</label><br>
+
+                    <textarea
+                        id="motivation"
+                        name="motivation"
+                        rows="5"
+                        cols="40"
+                        placeholder="Tell us about your curiosity and learning goals."
+                        required
+                    ></textarea>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>System Specifications</legend>
+
+                <p>
+                    <label for="device">Primary Device:</label><br>
+
+                    <select id="device" name="device" required>
+                        <option value="">Select your device</option>
+                        <option value="desktop">Desktop Computer</option>
+                        <option value="laptop">Laptop</option>
+                        <option value="tablet">Tablet</option>
+                        <option value="mobile">Mobile Phone</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="operating-system">Operating System:</label><br>
+
+                    <select
+                        id="operating-system"
+                        name="operating_system"
+                        required
+                    >
+                        <option value="">Select your operating system</option>
+                        <option value="windows">Windows</option>
+                        <option value="linux">Linux</option>
+                        <option value="macos">macOS</option>
+                        <option value="android">Android</option>
+                        <option value="ios">iOS</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="specifications">
+                        Additional System Details:
+                    </label><br>
+
+                    <textarea
+                        id="specifications"
+                        name="system_details"
+                        rows="3"
+                        cols="40"
+                        placeholder="Optional: device or software details"
+                    ></textarea>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Preferred Learning Direction</legend>
+
+                <p>How would you prefer to learn?</p>
+
+                <input
+                    type="radio"
+                    id="learning-individual"
+                    name="learning_style"
+                    value="individual"
+                    required
+                >
+                <label for="learning-individual">Individual Learning</label><br>
+
+                <input
+                    type="radio"
+                    id="learning-team"
+                    name="learning_style"
+                    value="team"
+                >
+                <label for="learning-team">Team Projects</label><br>
+
+                <input
+                    type="radio"
+                    id="learning-both"
+                    name="learning_style"
+                    value="both"
+                >
+                <label for="learning-both">Both</label>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Submit Application</button>
+            <button type="reset">Reset Form</button>
+        </form>
+
+        <section id="next-steps">
+            <h2>Before You Begin</h2>
+
+            <ul>
+                <li>Be curious and willing to learn.</li>
+                <li>Start with the fundamentals.</li>
+                <li>Practise through small projects.</li>
+                <li>Ask questions and learn from mistakes.</li>
+            </ul>
+
+            <p>
+                <a href="guild.html">Read the Guild Philosophy</a>
+            </p>
+
+            <p>
+                <a href="quests.html">Explore the Quest Board</a>
+            </p>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p><strong>Kautuhala Coding Guild</strong></p>
+
+        <p>
+            Wonder → Explore → Build → Understand → Become → Wonder
+        </p>
+
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="contact.html">Contact</a>
+        </p>
+    </footer>
+</body>
+</html>
